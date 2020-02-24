@@ -26,7 +26,7 @@ class Scraper
       #course.schedule = post.css(".date").text
       #course.description = post.css("p").text
     #end
-    binding.pry
+    #binding.pry
   end
 
   #Use CSS selector to grab all of the HTML elements that contain a course
