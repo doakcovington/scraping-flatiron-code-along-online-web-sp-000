@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
+require 'pry'
 
 require_relative './course.rb'
 
@@ -26,7 +27,7 @@ class Scraper
 
   end
 
-  #responsible for instantiating Course objects 
+  #responsible for instantiating Course objects
   def make_courses
 
   end
