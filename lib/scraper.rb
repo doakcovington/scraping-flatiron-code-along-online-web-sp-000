@@ -19,7 +19,7 @@ class Scraper
 
   #use Nokogiri and open-uri to grab the entire HTML document from web page
   def get_page
-
+    doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
   end
 
   #Use CSS selector to grab all of the HTML elements that contain a course
