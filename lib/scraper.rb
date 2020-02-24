@@ -36,7 +36,12 @@ class Scraper
 
   #responsible for instantiating Course objects
   def make_courses
-
+    self.get_courses.each do |post|
+      course = Course.new
+      course.title = post.css("h2").text
+      course.scheudle = post.css(".date").text
+      course.description = post.css("p").text
+    end
   end
 
 end
