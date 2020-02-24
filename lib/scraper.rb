@@ -4,7 +4,7 @@ require 'open-uri'
 require_relative './course.rb'
 
 class Scraper
-  
+
   def print_courses
     self.make_courses
     Course.all.each do |course|
@@ -15,8 +15,20 @@ class Scraper
       end
     end
   end
-  
+
+  #use Nokogiri and open-uri to grab the entire HTML document from web page
+  def get_page
+
+  end
+
+  #Use CSS selector to grab all of the HTML elements that contain a course
+  def get_courses
+
+  end
+
+  #responsible for instantiating Course objects 
+  def make_courses
+
+  end
+
 end
-
-
-
